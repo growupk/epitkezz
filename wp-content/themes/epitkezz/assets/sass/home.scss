@@ -133,10 +133,10 @@ section.planning {
             padding-left: 25px;
             padding-right: 25px;
         }
-        .row{
+        .row {
             margin-top: 42px;
         }
-        .opportunitie{
+        .opportunitie {
             text-align: center;
             p {
                 display: inline-block;
@@ -162,14 +162,14 @@ section.planning {
             }
         }
     }
-    .implementation{
-        .left-box{
+    .implementation {
+        .left-box {
             margin-top: 84px;
         }
-        .right-box{
+        .right-box {
             margin-top: 40px;
         }
-        h3{
+        h3 {
             position: relative;
             font-size: 32px;
             font-weight: bold;
@@ -177,7 +177,7 @@ section.planning {
             color: #4c5359;
             padding-bottom: 25px;
             margin-bottom: 25px;
-            span{
+            span {
                 color: #f7912f;
             }
             &:after {
@@ -191,19 +191,19 @@ section.planning {
                 left: 0;
             }
         }
-        p{
+        p {
             font-family: "Century Gothic", sans-serif;
             color: #656566;
             font-size: 16px;
             margin-bottom: 40px;
-            span{
+            span {
                 color: #f7912f;
             }
         }
-        .counter{
+        .counter {
             padding: 0;
             margin-bottom: 30px;
-            span{
+            span {
                 font-size: 16px;
                 text-transform: uppercase;
                 vertical-align: middle;
@@ -217,6 +217,59 @@ section.planning {
                     font-size: 22px;
                     border: 2px solid #f7912f;
                     padding: 0 10.6px;
+                }
+            }
+            &:nth-child(even) {
+                padding-left: 25px;
+            }
+        }
+    }
+}
+
+section.type-of-plan {
+    .container {
+        width: 983px;
+    }
+    height: 676px;
+    background-position: center;
+    .grey-box {
+        position: absolute;
+        box-shadow: 4px 6px 10px #2f2f2f;
+        top: -30px;
+        max-width: 442px;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 56px;
+        padding-right: 56px;
+        background-color: #4c5359;
+        color: #fff;
+        h3 {
+            font-family: "Century Gothic", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+        p {
+            text-align: justify;
+            font-size: 16px;
+            margin-bottom: 93px;
+        }
+        .plan-btn-box{
+            text-align: center;
+            padding-bottom: 80px;
+            .plan-btn {
+                border: 3px solid #fff;
+                padding: 15px 40px;
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: normal;
+                transition: all 0.3s;
+                &:hover {
+                    color: #000;
+                    background-color: #fff;
                 }
             }
         }

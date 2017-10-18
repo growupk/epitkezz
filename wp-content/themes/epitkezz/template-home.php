@@ -73,5 +73,18 @@
         </div>
     </div>
 </section>
+<section class="type-of-plan" style="background-image: url('<?= the_field('tipusterv_katalogus_hatter');?>');">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 grey-box">
+                <h3><?= the_field('tipusterv_katalogus_cim');?></h3>
+                <?= the_field('tipusterv_katalogus_tartalom');?>
+                <div class="plan-btn-box">
+                    <a href="#" class="plan-btn"><?= the_field('tipusterv_katalogus_gomb');?></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
