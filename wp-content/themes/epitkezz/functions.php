@@ -37,4 +37,42 @@ register_nav_menus (
 		)
 	);
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	acf_add_options_sub_page('Fejléc');
+	acf_add_options_sub_page('Lábléc');
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Téma beállítások',
+		'menu_title'	=> 'Téma beállítások',
+		'menu_slug' 	=> 'theme-options',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> '',
+		'position'		=> false,
+		'icon-url'		=> false
+	));
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Fejléc',
+		'menu_title'	=> 'Fejléc',
+		'menu_slug' 	=> 'theme-options-header',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'theme-options',
+		'position'		=> false,
+		'icon-url'		=> false
+	));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Lábléc',
+		'menu_title'	=> 'Lábléc',
+		'menu_slug' 	=> 'theme-options-footer',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'theme-options',
+		'position'		=> false,
+		'icon-url'		=> false
+	));
+	
+}
+
 include 'func/scripts_and_stylesheets.php';

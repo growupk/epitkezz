@@ -26,17 +26,19 @@
 <body <?php body_class(); ?>>
 	<section class="top-menu">
 		<header>
-			<div class="container">
-				<div class="row">
-					<section class="header-top">
-						<div class="container-fluid">	
-							<div class="row">
-								<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/logo.png" alt="<?php wp_title(); ?>" class="img-responsive logo"></a>				
-							</div>
+			<section class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/logo.png" alt="<?php wp_title(); ?>" class="img-responsive logo"></a>				
 						</div>
-					</section>
+						<div class="col-sm-6 header-contact">
+							<span><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/call-answer.png" alt="telefon" class="img-responsive"><?= the_field('fejlec_telefonszam', 'option');?></span>
+							<span><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/mail.png" alt="email	" class="img-responsive"><a href="mailto:<?= the_field('fejlec_email');?>"><?= the_field('fejlec_email', 'option');?></a></span>		
+						</div>
+					</div>
 				</div>
-			</div>
+			</section>
 			<div class="container-fluid top-menu">
 				<div class="container">
 					<div class="row">
@@ -49,21 +51,21 @@
 					</div>
 					<div class="col-xs-12 header-menu-items">
 						<nav class="navbar">
-							<div class="navbar-header">
-							</div>
-								<div class="collapse   navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-										<?php
-										wp_nav_menu( 
-											array( 
-												'menu'   => 'fo-menu',
-												'container' => '',
-												'container_class' => '',
-												'items_wrap' => '%3$s'
-												) 
-											);
-											?>
-									</ul>
+							<div class="collapse   navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<?php
+									wp_nav_menu( 
+										array( 
+											'menu'   => 'fo-menu',
+											'container' => '',
+											'container_class' => '',
+											'items_wrap' => '%3$s'
+											) 
+										);
+										?>
+								</ul>
+								<div class="facebook">
+									<a target="_blank" href="<?= the_field('fejlec_facebook_link', 'option');?>" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</nav>
