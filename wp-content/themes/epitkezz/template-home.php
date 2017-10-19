@@ -22,7 +22,7 @@
         <div class="row">
             <?php if( have_rows('tipustervek') ): ?>
                 <?php while( have_rows('tipustervek') ): the_row(); ?>
-                    <div class="col-sm-4">
+                    <div class="col-xs-12 col-lg-4">
                         <img src="<?php the_sub_field('tipusterv_logo');?>" alt="icon" class="img-responsive">
                         <p class="planning-sub-title"><?= the_sub_field('tipusterv_cim');?></p>
                         <div class="planning-sub-content">
@@ -41,7 +41,7 @@
                     $counter = 1;
                     ?>
                 <?php while( have_rows('lehetosegek') ): the_row(); ?>
-                <div class="col-sm-4 opportunitie">
+                <div class="col-xs-12 col-md-4 opportunitie">
                     <span><?= $counter++;?></span><?php the_sub_field('lehetoseg');?>
                 </div>
                 <?php endwhile; ?>
@@ -52,7 +52,7 @@
     <div class="implementation">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 left-box">
+                <div class="col-xs-12 col-lg-8 left-box">
                     <h3><?= the_field('kivitelezes_cim');?></h3>
                     <?= the_field('kivitelezes_szoveges_tartalom');?>
                     <?php if( have_rows('kivitelezes_felsorolasok') ): ?>
@@ -60,13 +60,13 @@
                             $counter = 1;
                             ?>
                         <?php while( have_rows('kivitelezes_felsorolasok') ): the_row(); ?>
-                            <div class="col-sm-6 counter">
+                            <div class="col-xs-12 col-lg-6 counter">
                                 <span class="number"><?= $counter++;?></span><span><?php the_sub_field('kivitelezes_felsorolas');?></span>
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-sm-4 right-box">
+                <div class="hidden-md-down col-sm-4 right-box">
                     <img src="<?php the_field('kivitelezes_jobb_oldali_kep');?>" alt="icon" class="img-responsive">
                 </div>
             </div>
@@ -106,10 +106,10 @@
             </div>
         </div>
         <div class="row background-box" style="background-image: url('<?= the_field('fooldal_rolunk_hatter_kep');?>');">
-            <div class="col-sm-6 left-box">
+            <div class="col-xs-12 col-lg-6 left-box">
                 <?= the_field('fooldal_rolunk_szoveg_01');?>
             </div>
-            <div class="col-sm-6 right-box">
+            <div class="col-xs-12 col-lg-6 right-box">
                 <?= the_field('fooldal_rolunk_szoveg_02');?>
             </div>
         </div>

@@ -36,8 +36,8 @@ section.home-top-img {
             font-size: 26.7px;
             color: #fff;
             margin-bottom: 85px;
-            @media(max-width:767px){
-               margin-bottom: 40px;
+            @media(max-width: 767px) {
+                margin-bottom: 40px;
             }
         }
         .main-top-img-btn {
@@ -53,11 +53,11 @@ section.home-top-img {
                 background-color: #fff;
             }
         }
-        @media(max-width:767px){
+        @media(max-width:767px) {
             padding-top: 30px;
         }
     }
-    @media(max-width:767px){
+    @media(max-width:767px) {
         height: auto;
         padding-bottom: 40px;
     }
@@ -66,7 +66,7 @@ section.home-top-img {
 section.planning {
     .container {
         width: 984px;
-        @media(max-width: 984px){
+        @media(max-width: 984px) {
             width: 100%;
         }
     }
@@ -80,6 +80,9 @@ section.planning {
             font-style: italic;
             color: #fff;
             font-weight: normal;
+            @media(max-width: 400px) {
+                font-size: 22px;
+            }
         }
     }
     .planning-type {
@@ -123,6 +126,9 @@ section.planning {
             text-transform: uppercase;
             color: #4c5359;
             font-weight: bold;
+            @media(max-width: 991px) {
+                margin-bottom: 25px;
+            }
         }
         .planning-sub-content {
             p {
@@ -136,15 +142,26 @@ section.planning {
                 font-variant: normal;
                 font-size: 14.7px;
                 vertical-align: 0;
+                @media(max-width: 991px) {
+                    text-align: center;
+                }
+            }
+            @media(max-width: 991px) {
+                max-width: 500px;
+                margin: 0 auto;
             }
         }
     }
     .opportunities {
         height: 121px;
         background-color: #4c5359;
-        .col-sm-4 {
+        .col-md-4 {
             padding-left: 25px;
             padding-right: 25px;
+            @media(max-width: 991px) {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
         }
         .row {
             margin-top: 42px;
@@ -163,6 +180,9 @@ section.planning {
                 text-decoration: none;
                 font-variant: normal;
                 font-size: 15.3px;
+                @media(max-width: 991px) {
+                    font-size: 13px;
+                }
             }
             span {
                 display: inline-block;
@@ -173,11 +193,22 @@ section.planning {
                 border: 2px solid #f7912f;
                 padding: 0 10.6px;
             }
+            @media(max-width: 767px) {
+                padding-bottom: 30px;
+                text-align: inherit;
+                margin-left: calc(50% - 110px);
+            }
+        }
+        @media(max-width: 767px) {
+            height: auto;
         }
     }
     .implementation {
         .left-box {
             margin-top: 84px;
+            @media(max-width: 991px) {
+                margin-top: 50px;
+            }
         }
         .right-box {
             margin-top: 40px;
@@ -202,6 +233,12 @@ section.planning {
                 background-color: #f7912f;
                 bottom: 0px;
                 left: 0;
+                @media(max-width: 991px) {
+                    left: calc(50% - 52.5px);
+                }
+            }
+            @media(max-width: 991px) {
+                text-align: center;
             }
         }
         p {
@@ -211,6 +248,12 @@ section.planning {
             margin-bottom: 40px;
             span {
                 color: #f7912f;
+            }
+            @media(max-width: 991px) {
+                text-align: center;
+                max-width: 700px;
+                margin: 0 auto;
+                margin-bottom: 40px;
             }
         }
         .counter {
@@ -234,6 +277,16 @@ section.planning {
             }
             &:nth-child(even) {
                 padding-left: 25px;
+                @media(max-width: 991px) {
+                    padding-left: 0px;
+                }
+            }
+            @media(max-width: 991px) {
+                max-width: 320px;
+                margin-left: calc(50% - 110px);
+            }
+            @media(max-width: 370px) {
+                margin-left: 10px;
             }
         }
     }
@@ -244,12 +297,15 @@ section.type-of-plan {
     background-position: center;
     .container {
         width: 984px;
-        @media(max-width: 984px){
+        @media(max-width: 984px) {
             width: 100%;
         }
     }
-    .row{
+    .row {
         padding-left: 15px;
+        @media(max-width: 480px) {
+            padding-left: 0px;
+        }
     }
     .grey-box {
         position: absolute;
@@ -273,6 +329,9 @@ section.type-of-plan {
             text-align: justify;
             font-size: 16px;
             margin-bottom: 93px;
+            @media(max-width: 480px) {
+                margin-bottom: 50px;
+            }
         }
         .plan-btn-box {
             text-align: center;
@@ -291,24 +350,39 @@ section.type-of-plan {
                     background-color: #fff;
                 }
             }
+            @media(max-width: 480px) {
+                padding-bottom: 20px;
+            }
+        }
+        @media(max-width: 991px) {
+            top: 0px;
+        }
+        @media(max-width: 480px) {
+            position: relative;
+            max-width: 100%;
+            padding: 30px 30px;
         }
     }
+    @media(max-width: 480px) {
+        height: auto;
+    }
 }
-section.home-design{
+
+section.home-design {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    .overlay{
+    .overlay {
         position: absolute;
         opacity: 0.50;
         background-color: #000;
         width: 100%;
         height: 100%;
     }
-    .text-box{
+    .text-box {
         padding-bottom: 45px;
         text-align: center;
-        h3{
+        h3 {
             font-family: "Century Gothic", sans-serif;
             font-weight: 700;
             color: #ffffff;
@@ -316,7 +390,7 @@ section.home-design{
             margin-bottom: 27px;
             margin-top: 25px;
         }
-        p{
+        p {
             font-family: "Century Gothic", sans-serif;
             color: #fff;
             font-size: 20px;
@@ -339,20 +413,21 @@ section.home-design{
         }
     }
 }
-section.about-us{
+
+section.about-us {
     margin-bottom: 16px;
     .container {
         width: 984px;
-        @media(max-width: 984px){
+        @media(max-width: 984px) {
             width: 100%;
         }
     }
-    .background-box{
+    .background-box {
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
     }
-    h3{
+    h3 {
         position: relative;
         font-size: 32px;
         font-weight: bold;
@@ -370,24 +445,38 @@ section.about-us{
             background-color: #f7912f;
             bottom: 0px;
             left: 0;
+            @media(max-width: 991px){
+                left: calc(50% - 63px);
+            }
+        }
+        @media(max-width: 991px){
+            text-align: center;
         }
     }
-    .left-box, .right-box{
+    .left-box,
+    .right-box {
         font-family: "Century Gothic", sans-serif;
         text-align: justify;
         font-size: 16.0px;
         line-height: 22.00px;
         padding-bottom: 50px;
-        span{
+        span {
             font-weight: 700;
             color: #f7912f;
         }
     }
-    .left-box{
+    .left-box {
         border-right: 1px solid #a9adb0;
         padding-right: 40px;
+        @media(max-width: 991px){
+            border: none;
+            padding-right: 15px;
+        }
     }
-    .right-box{
+    .right-box {
         padding-left: 40px;
+        @media(max-width: 991px){
+            padding-left: 15px;
+        }
     }
 }
