@@ -86,5 +86,33 @@
         </div>
     </div>
 </section>
-
+<section class="home-design" style="background-image: url('<?= the_field('tervezes_alapkovei_hatter_kep');?>');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-box">
+                <h3><?= the_field('tervezes_alapkovei_cim');?></h3>
+                <p><?= the_field('tervezes_alapkovei_szoveg');?></p>
+                <a href="#" class="main-top-img-btn"><?= the_field('tervezes_alapkovei_gomb');?></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3><?= the_field('fooldal_rolunk_cim');?></h3>
+            </div>
+        </div>
+        <div class="row background-box" style="background-image: url('<?= the_field('fooldal_rolunk_hatter_kep');?>');">
+            <div class="col-sm-6 left-box">
+                <?= the_field('fooldal_rolunk_szoveg_01');?>
+            </div>
+            <div class="col-sm-6 right-box">
+                <?= the_field('fooldal_rolunk_szoveg_02');?>
+            </div>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>

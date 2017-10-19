@@ -29,10 +29,16 @@
 			<section class="header-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-12 col-md-4 col-lg-6 logo-container">
 							<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/logo.png" alt="<?php wp_title(); ?>" class="img-responsive logo"></a>				
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
 						</div>
-						<div class="col-sm-6 header-contact">
+						<div class="col-12 col-md-8 col-lg-6 header-contact">
 							<span><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/call-answer.png" alt="telefon" class="img-responsive"><?= the_field('fejlec_telefonszam', 'option');?></span>
 							<span><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/mail.png" alt="email	" class="img-responsive"><a href="mailto:<?= the_field('fejlec_email');?>"><?= the_field('fejlec_email', 'option');?></a></span>		
 						</div>
@@ -41,14 +47,6 @@
 			</section>
 			<div class="container-fluid top-menu">
 				<div class="container">
-					<div class="row">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
 					<div class="col-xs-12 header-menu-items">
 						<nav class="navbar">
 							<div class="collapse   navbar-collapse" id="bs-example-navbar-collapse-1">
