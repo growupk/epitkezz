@@ -13,7 +13,7 @@
 
 	<title><?php wp_title(); ?></title>
 
-	<link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory');?>/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/favicon.ico" type="image/x-icon" />
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 

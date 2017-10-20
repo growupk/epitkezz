@@ -80,7 +80,7 @@
                 <h3><?= the_field('tipusterv_katalogus_cim');?></h3>
                 <?= the_field('tipusterv_katalogus_tartalom');?>
                 <div class="plan-btn-box">
-                    <a href="#" class="plan-btn"><?= the_field('tipusterv_katalogus_gomb');?></a>
+                    <a href="<?= get_permalink( get_page_by_title( 'tervkatalogus' ) );?>" class="plan-btn"><?= the_field('tipusterv_katalogus_gomb');?></a>
                 </div>
             </div>
         </div>
