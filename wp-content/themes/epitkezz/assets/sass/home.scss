@@ -209,6 +209,9 @@ section.planning {
             @media(max-width: 991px) {
                 margin-top: 50px;
             }
+            @media(max-width: 350px){
+                padding-right: 0px;
+            }
         }
         .right-box {
             margin-top: 40px;
@@ -285,8 +288,14 @@ section.planning {
                 max-width: 320px;
                 margin-left: calc(50% - 110px);
             }
-            @media(max-width: 370px) {
+            @media(max-width: 500px) {
+                margin-left: 16%;
+            }
+            @media(max-width: 410px) {
                 margin-left: 10px;
+            }
+            @media(max-width: 410px) {
+                margin-left: 0px;
             }
         }
     }
