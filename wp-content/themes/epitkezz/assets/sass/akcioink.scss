@@ -109,7 +109,7 @@ section.action {
         background-size: cover;
         .overlay {
             position: absolute;
-            opacity: 0.50;
+            opacity: 0.70;
             background-color: #000;
             width: 100%;
             height: 100%;
@@ -224,6 +224,15 @@ section.action {
         .logo-box{
             flex: 0 0 25%;
             max-width: 25%;
+            img{
+                margin: 0 auto;
+                margin-top: 15px;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+                @media(max-width: 895px){
+                    margin-top: 0;
+                }
+            }
         }
         @media(max-width: 767px){
             display: none;
