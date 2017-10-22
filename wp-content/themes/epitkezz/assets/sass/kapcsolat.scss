@@ -1,7 +1,161 @@
-section.contact{
-    .container-fluid{
-        background-position: center center;
+section.contact {
+    .container-fluid {
+        border-bottom: 8px solid orange;
         background-repeat: no-repeat;
         background-size: cover;
+        @media(max-width: 767px){
+            background-position: center center;
+        }
+    }
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+    .main-title {
+        h3 {
+            margin-top: 45px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 45px;
+            font-weight: bold;
+            color: #232220;
+            &:after {
+                content: '';
+                position: absolute;
+                height: 3px;
+                max-width: 192px;
+                width: 100%;
+                background-color: #232220;
+                bottom: 0px;
+                left: calc(50% - 96px);
+            }
+        }
+    }
+    .top-content {
+        p {
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 50px;
+            line-height: 16.20px;
+            font-family: "Verdana", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            color: #232220;
+            font-variant: normal;
+            font-size: 16px;
+        }
+    }
+    .contact-bottom-row {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 100px;
+        @media(max-width: 767px){
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .contact-image-wrapper {
+        text-align: center;
+        img {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .first-title {
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .second-title{
+            line-height: 19.80px;
+            font-family: "Century Gothic", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            color: #232220;
+            font-size: 16px;
+            margin-bottom: 35px;
+            margin-top: 35px;
+        }
+        &:nth-child(1) {
+            .first-title {
+                color: #f7912f;
+            }
+        }
+        &:nth-child(2) {
+            .first-title {
+                color: #0084a5;
+            }
+        }
+        &:nth-child(3) {
+            .first-title {
+                color: #4a4a4a;
+            }
+        }
+        &:nth-child(4) {
+            .first-title {
+                color: #00b0b0;
+            }
+        }
+        &:nth-child(5) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            .first-title {
+                color: #4a4a4a;
+            }
+            @media(max-width: 767px){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        &:nth-child(6) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            .first-title {
+                color: #00b0b0;
+            }
+            @media(max-width: 767px){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+section.contact-form{
+    background-color: whitesmoke;
+    padding-top: 40px;
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+    h3{
+        font-weight: bold;
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        margin-bottom: 60px;
+    }
+    .form-container{
+        label{
+            font-weight: normal;
+            font-size: 18px;
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            border: none;
+        }
+        input{
+            width: 100%;
+            height: 36px;
+            border: none;
+        }
+        .wpcf7-submit{
+            color: #4a4a4a;
+            font-size: 18px;
+        }
     }
 }
