@@ -42,5 +42,50 @@
         </div>
     </div>
 </section>
+<section class="solar-panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3><?= the_field('futeskoltseg_cim');?></h3>
+            </div>
+            <div class="col-xs-12 top-content">
+                <?= the_field('futeskoltseg_szoveges_tartalom');?>
+            </div>
+            <div class="col-xs-12 sub-title">
+                <h4><?= the_field('napelemes_rendszerek_elonyei_cim');?></h4>
+            </div>
+            <?php if( have_rows('napelemes_rendszerek_elonyei') ): ?>
+                <?php
+                    $counter = 1;
+                ?>
+                <div class="col-xs-12 col-lg-7 sub-content-box">
+                <?php while( have_rows('napelemes_rendszerek_elonyei') ): the_row(); ?>
+                    <div class="col-xs-12 sub-content">
+                        <span><?= $counter++;?></span><?= the_sub_field('napelemes_rendszerek_elonyei_felsorolas');?>
+                    </div>
+                <?php endwhile; ?>
+                </div>
+            <?php endif; ?>
+            <div class="col-xs-12 col-lg-5 img-box">
+                <img src="<?php the_field('napelemes_rendszerek_elonyei_jobb_oldali_kep');?>" alt="napelem ház" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pdf">
+    <div class="container">
+        <div class="row">
+            <h3><?= the_field('mit_tartalmaz_az_ar_cim');?></h3>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <a target="_blank" href="<?= the_field('teglahaz_pdf');?>"><?php _e('Téglaház','epitkezz')?></a>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <a target="_blank" href="<?php echo $file[the_field('teglahaz_pdf')]; ?>"><?php _e('Thermoház','epitkezz')?></a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

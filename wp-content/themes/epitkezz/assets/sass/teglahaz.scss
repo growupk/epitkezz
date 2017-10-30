@@ -168,7 +168,7 @@ section.heating {
             color: #656566;
             background-color: #fff;
         }
-        span:last-child{
+        span:last-child {
             padding-left: 5px;
             color: #fff;
             background-color: #656566;
@@ -184,7 +184,7 @@ section.heating {
             left: calc(50% - 82px);
         }
     }
-    p{
+    p {
         position: relative;
         text-align: justify;
         line-height: 19.00px;
@@ -200,28 +200,162 @@ section.heating {
         padding: 0 23px;
         margin-bottom: 20px;
     }
-    a{
+    a {
         margin: 0 auto;
-        img{
+        img {
             margin-top: 32px;
             filter: grayscale(100%);
         }
-        &:hover{
-            img{
+        &:hover {
+            img {
                 filter: grayscale(0%);
                 transition: all 0.3s;
             }
         }
     }
-    &:before{
+    &:before {
         content: '';
         position: absolute;
         z-index: 1;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-left: 71.5px solid transparent;
         border-right: 71.5px solid transparent;
         border-top: 45px solid #fff;
         left: calc(50% - 71.5px);
+    }
+}
+
+section.solar-panel {
+    margin-bottom: 40px;
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+    h3 {
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+        position: relative;
+        font-weight: 900;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        color: #656566;
+        span {
+            color: #f5912f;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            max-width: 105px;
+            width: 100%;
+            background-color: #f5912f;
+            bottom: 0px;
+            left: calc(50% - 52.5px);
+        }
+    }
+    .top-content {
+        text-align: justify;
+        line-height: 19.00px;
+        font-family: "Arial", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #656566;
+        background-color: transparent;
+        text-decoration: none;
+        font-variant: normal;
+        font-size: 16.0px;
+        vertical-align: 0;
+        p {
+            margin-bottom: 25px;
+            span {
+                line-height: 20.00px;
+                font-family: "Arial", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                color: #808080;
+                background-color: transparent;
+                text-decoration: none;
+                font-variant: normal;
+                font-size: 16.0px;
+                vertical-align: 0;
+            }
+        }
+    }
+    .sub-title {
+        padding-left: 40px;
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #656566;
+            margin-bottom: 30px;
+            margin-top: 25px;
+        }
+    }
+    .sub-content-box {
+        padding-left: 25px;
+        .sub-content {
+            p{
+                display: inline-block;
+                line-height: 37px;
+                font-size: 15px;
+                color: #656566;
+            }
+            span {
+                display: inline-block;
+                margin-right: 5px;
+                vertical-align: top;
+                color: #656566;
+                font-size: 22px;
+                border: 2px solid #656566;
+                padding: 0 10.6px;
+                margin-bottom: 30px;
+            }
+            &:last-child{
+                p{
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    .img-box{
+        img{
+            position: absolute;
+            left: -70px;
+            top: -50px;
+            width: 108%;
+            max-width: 108%;
+        }
+    }
+}
+.pdf{
+    height: 255px;
+    background-color: #232220;
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+    h3{
+        margin: 0 auto;
+        margin-top: 55px;
+        text-transform: uppercase;
+        line-height: 34.00px;
+        font-family: "Century Gothic", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #ffffff;
+        background-color: transparent;
+        text-decoration: none;
+        font-variant: normal;
+        font-size: 26.7px;
+        vertical-align: 0;
+        letter-spacing: 3.00px;
     }
 }
