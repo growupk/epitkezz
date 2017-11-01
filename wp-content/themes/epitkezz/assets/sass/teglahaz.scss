@@ -25,6 +25,12 @@ section.brick-house-header {
             span {
                 font-size: 44px;
                 text-transform: uppercase;
+                @media(max-width: 520px) {
+                    font-size: 32px;
+                }
+            }
+            @media(max-width: 520px) {
+                font-size: 32px;
             }
         }
         h4 {
@@ -32,17 +38,24 @@ section.brick-house-header {
             font-size: 27px;
             font-weight: normal;
         }
+        @media(max-width: 400px) {
+            padding-top: 150px;
+        }
     }
     .red-bottom-border {
         position: absolute;
         width: 100%;
         background-color: #b2292e;
         bottom: 0;
+        height: 95px;
         .logo {
             margin-left: 194px;
             img {
                 position: relative;
                 top: -40px;
+                @media(max-width: 767px) {
+                    display: none;
+                }
             }
             a {
                 position: absolute;
@@ -51,6 +64,18 @@ section.brick-house-header {
                 font-size: 22px;
                 font-weight: bold;
                 color: #fff;
+                @media(max-width: 767px) {
+                    position: relative;
+                    right: 0px;
+                    display: block;
+                    text-align: center;
+                }
+            }
+            @media(max-width: 1450px) {
+                margin-left: 30px;
+            }
+            @media(max-width: 767px) {
+                margin-left: 0px;
             }
         }
     }
@@ -86,6 +111,9 @@ section.brick-type {
             background-color: #b2292e;
             bottom: 0px;
             left: calc(50% - 52.5px);
+        }
+        @media(max-width: 520px) {
+            font-size: 21px;
         }
     }
     .brick {
@@ -128,6 +156,11 @@ section.brick-type {
                 font-size: 14.7px;
                 vertical-align: 0;
                 margin-bottom: 40px;
+                @media(max-width: 991px) {
+                    max-width: 550px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
         }
     }
@@ -183,6 +216,9 @@ section.heating {
             bottom: 0px;
             left: calc(50% - 82px);
         }
+        @media(max-width: 767px) {
+            font-size: 26px;
+        }
     }
     p {
         position: relative;
@@ -224,6 +260,10 @@ section.heating {
         border-top: 45px solid #fff;
         left: calc(50% - 71.5px);
     }
+    @media(max-width: 880px) {
+        height: auto;
+        padding-bottom: 30px;
+    }
 }
 
 section.solar-panel {
@@ -257,6 +297,9 @@ section.solar-panel {
             background-color: #f5912f;
             bottom: 0px;
             left: calc(50% - 52.5px);
+        }
+        @media(max-width: 767px) {
+            font-size: 30px;
         }
     }
     .top-content {
@@ -295,6 +338,9 @@ section.solar-panel {
             color: #656566;
             margin-bottom: 30px;
             margin-top: 25px;
+            @media(max-width: 991px) {
+                text-align: center;
+            }
         }
     }
     .sub-content-box {
@@ -305,6 +351,13 @@ section.solar-panel {
                 line-height: 37px;
                 font-size: 15px;
                 color: #656566;
+                @media(max-width: 767px) {
+                    line-height: normal;
+                }
+                @media(max-width: 580px) {
+                    text-align: center;
+                    display: block;
+                }
             }
             span {
                 display: inline-block;
@@ -315,12 +368,25 @@ section.solar-panel {
                 border: 2px solid #656566;
                 padding: 0 10.6px;
                 margin-bottom: 30px;
+                @media(max-width: 580px) {
+                    display: table;
+                    margin: 0 auto;
+                }
             }
             &:last-child {
                 p {
                     line-height: 18px;
                 }
             }
+        }
+        @media(max-width: 991px) {
+            margin-left: calc(50% - 230px);
+        }
+        @media(max-width: 767px) {
+            margin-left: calc(46% - 230px);
+        }
+        @media(max-width: 580px) {
+            margin-left: 0;
         }
     }
     .img-box {
@@ -330,6 +396,14 @@ section.solar-panel {
             top: -50px;
             width: 108%;
             max-width: 108%;
+            @media(max-width: 991px) {
+                position: relative;
+                left: 0px;
+                top: 0px;
+                width: 50%;
+                margin: 0 auto;
+                max-width: 100%;
+            }
         }
     }
 }
@@ -359,17 +433,38 @@ section.solar-panel {
         vertical-align: 0;
         letter-spacing: 3.00px;
         margin-bottom: 75px;
+        @media(max-width: 500px){
+            font-size: 20px;
+        }
     }
     .left-btn {
         padding-right: 100px;
         .plan-btn-box {
             text-align: right;
+            @media(max-width: 700px){
+                text-align: center;
+            }
+        }
+        @media(max-width: 767px){
+            padding-right: 15px;
+        }
+        @media(max-width: 700px){
+            width: 100%
         }
     }
     .right-btn {
         padding-left: 100px;
         .plan-btn-box {
             text-align: left;
+            @media(max-width: 700px){
+                text-align: center;
+            }
+        }
+        @media(max-width: 767px){
+            padding-left: 15px;
+        }
+        @media(max-width: 700px){
+            width: 100%
         }
     }
     .plan-btn-box {
@@ -391,26 +486,36 @@ section.solar-panel {
             }
         }
     }
+    @media(max-width: 700px){
+        height: auto;
+    }
 }
-section.house-price{
+
+section.house-price {
     .container {
         width: 984px;
         @media(max-width: 984px) {
             width: 100%;
         }
     }
-    .row{
+    .row {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    .left-box{
+    .left-box {
         border-right: 1px solid black;
-        img{
+        img {
             margin: 0 auto;
             margin-top: 10px;
+            @media(max-width: 991px){
+                margin-bottom: 25px;
+            }
+        }
+        @media(max-width: 991px){
+            border: none;
         }
     }
-    p{
+    p {
         text-align: center;
         font-family: "Century Gothic", sans-serif;
         font-style: normal;
@@ -422,17 +527,28 @@ section.house-price{
         vertical-align: 0;
     }
 }
-.everyone-needs-home{
-    .row{
+
+.everyone-needs-home {
+    .row {
         margin: 0;
     }
-    .left-box, .right-box{
+    .left-box,
+    .right-box {
         height: 565px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        @media(max-width: 580px){
+            height: auto;
+            padding-bottom: 30px;
+        }
     }
-    .right-box{
+    .left-box{
+        @media(max-width: 900px){
+            display: none;
+        }
+    }
+    .right-box {
         padding-left: 0px;
         .overlay {
             position: absolute;
@@ -441,11 +557,18 @@ section.house-price{
             width: 100%;
             height: 100%;
         }
+        @media(max-width: 900px){
+            width: 100%;
+        }
     }
-    .wrapper{
+    .wrapper {
         padding-left: 85px;
+        @media(max-width: 580px){
+            text-align: center;
+            padding-left: 15px;
+        }
     }
-    h3{
+    h3 {
         position: relative;
         font-size: 28px;
         text-transform: uppercase;
@@ -453,11 +576,11 @@ section.house-price{
         margin-top: 115px;
         color: #fff;
         padding-bottom: 27px;
-        span{
+        span {
             font-weight: bold;
             color: #ffb745;
         }
-        p{
+        p {
             margin-bottom: 0;
         }
         &:after {
@@ -468,9 +591,12 @@ section.house-price{
             width: 100%;
             background-color: #fff;
             bottom: 0px;
+            @media(max-width: 580px){
+                left: calc(50% - 83px);
+            }
         }
     }
-    h4{
+    h4 {
         position: relative;
         line-height: 28.00px;
         font-family: "Century Gothic", sans-serif;
@@ -484,7 +610,7 @@ section.house-price{
         vertical-align: 0;
         margin-top: 27px;
     }
-    .content{
+    .content {
         position: relative;
         text-align: justify;
         width: 100%;
@@ -499,8 +625,11 @@ section.house-price{
         font-variant: normal;
         font-size: 16.0px;
         vertical-align: 0;
+        @media(max-width: 580px){
+            margin: 0 auto;
+        }
     }
-    &:before{
+    &:before {
         content: '';
         position: absolute;
         z-index: 1;

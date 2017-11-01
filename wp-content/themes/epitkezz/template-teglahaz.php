@@ -78,12 +78,12 @@
             <h3><?= the_field('mit_tartalmaz_az_ar_cim');?></h3>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-lg-6 left-btn">
+            <div class="col-xs-6 left-btn">
                 <div class="plan-btn-box">
                     <a class="plan-btn" target="_blank" href="<?= the_field('teglahaz_pdf');?>"><?php _e('Téglaház','epitkezz')?></a>
                 </div>
             </div>
-            <div class="col-xs-12 col-lg-6 right-btn">
+            <div class="col-xs-6 right-btn">
                 <div class="plan-btn-box">
                     <a class="plan-btn" target="_blank" href="<?php echo $file[the_field('teglahaz_pdf')]; ?>"><?php _e('Thermo-ház','epitkezz')?></a>
                 </div>
