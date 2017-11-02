@@ -1,0 +1,78 @@
+.thermohouse {
+    height: 50%;
+    section.brick-house-header .img-text {
+        max-width: 100%;
+        h3 {
+            font-size: 48px;
+            p {
+                line-height: 62px;
+            }
+        }
+    }
+    section.brick-type {
+        h3:after {
+            background-color: #676667;
+        }
+        h4 {
+            color: #f4767c;
+        }
+        .bottom-content p {
+            span {
+                float: right;
+                margin-top: 25px;
+                margin-bottom: 60px;
+                line-height: 18.00px;
+                font-family: "Arial", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                color: #656566;
+                background-color: transparent;
+                text-decoration: none;
+                font-variant: normal;
+                font-size: 14.7px;
+                vertical-align: 0;
+            }
+        }
+    }
+    /*Thermo only*/
+    section.thermo-generation{
+        height: 230px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        margin-bottom: 87px;
+        p{
+            padding-top: 50px;
+            padding-bottom: 35px;
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+            line-height: 25px;
+            @media(max-width: 767px){
+                text-shadow: 1px 1px black;
+            }
+        }
+        .page-btn-link{
+           text-align: center;
+           margin-bottom: 23px;
+            a{
+                font-size: 16px;
+                background-color: rgba(255, 255, 255, 0.55);
+                color: #000;
+                padding: 11px 67px;
+                text-transform: uppercase;
+                border-radius: 27px 27px 27px 27px;
+                text-decoration: none;
+                transition: all 0.3s;
+                &:hover{
+                    background-color: rgba(237, 27, 36, 0.42);
+                    color: #fff;
+                }
+            }
+        }
+        @media(max-width: 767px){
+            height: auto;
+            padding-bottom: 30px;
+        }
+    }
+}

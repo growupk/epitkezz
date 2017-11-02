@@ -11,7 +11,7 @@
                 <a href="<?= get_permalink( get_page_by_title( 'téglaház' ) );?>"><?= the_field('kivitelezes_bal_oldali_doboz_gomb_szovege');?></a>
             </div>
             <div class="col-lg-6 right-box" style="background-image: url('<?= the_field('kivitelezes_jobb_oldali_doboz_kep');?>');">
-                <a href="#"><?= the_field('kivitelezes_jobb_oldali_doboz_gomb_szovege');?></a>
+                <a href="<?= get_permalink( get_page_by_title( 'thermoház' ) );?>"><?= the_field('kivitelezes_jobb_oldali_doboz_gomb_szovege');?></a>
             </div>
         </div>
     </div>
