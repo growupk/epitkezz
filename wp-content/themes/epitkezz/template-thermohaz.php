@@ -38,6 +38,31 @@
             <a target="_blank" href="http://www.thermo-block.hu/"><?php _e('Tovább','epitkezz');?></a>
         </div>
     </section>
+    <section class="planning">
+        <div class="implementation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-9 left-box">
+                        <h3><?= the_field('kivitelezes_cim');?></h3>
+                        <?= the_field('kivitelezes_szoveges_tartalom');?>
+                        <?php if( have_rows('kivitelezes_felsorolasok') ): ?>
+                            <?php
+                                $counter = 1;
+                                ?>
+                            <?php while( have_rows('kivitelezes_felsorolasok') ): the_row(); ?>
+                                <div class="col-xs-12 col-lg-6 counter">
+                                    <span class="number"><?= $counter++;?></span><span><?php the_sub_field('kivitelezes_felsorolas');?></span>
+                                </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="hidden-md-down col-sm-3 right-box">
+                        <img src="<?php the_field('kivitelezes_jobb_oldali_kep');?>" alt="icon" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="heating" style="background-image: url('<?= the_field('tegla__thermo_futes_rendszer_hatterkep');?>');">
         <div class="overlay"></div>
         <h3><?= the_field('tegla__thermo_futes_rendszer_cim');?></h3>
