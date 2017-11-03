@@ -1,0 +1,26 @@
+section.plan-catalog{
+    height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+    h3, p{
+        color: #fff;
+        text-align: center;
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    h3{
+        margin-top: 106px;
+        margin-bottom: 65px;
+        font-size: 40px;
+    }
+    p{
+        font-size: 13px;
+    }
+}

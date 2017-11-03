@@ -75,4 +75,20 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+function create_post_type() {
+	register_post_type( 'houses',
+		array(
+		'labels' => array(
+			'name' => __( 'Tervkatalógus' ),
+			'singular_name' => __( 'Tervkatalógus' )
+		),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array( 'title', 'thumbnail' ),
+		'taxonomies' => array( 'category' )
+		)
+	);
+}
+add_action( 'init', 'create_post_type' );
+
 include 'func/scripts_and_stylesheets.php';
