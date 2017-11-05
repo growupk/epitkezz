@@ -1,4 +1,4 @@
-section.plan-catalog{
+section.plan-catalog {
     height: 260px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,19 +8,184 @@ section.plan-catalog{
             width: 100%;
         }
     }
-    h3, p{
+    h3,
+    p {
         color: #fff;
         text-align: center;
         display: block;
         width: 100%;
         text-transform: uppercase;
     }
-    h3{
+    h3 {
         margin-top: 106px;
         margin-bottom: 65px;
         font-size: 40px;
+        @media(max-width: 767px) {
+            font-size: 36px;
+        }
     }
-    p{
+    p {
         font-size: 13px;
+        @media(max-width: 767px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    @media(max-width: 767px) {
+        height: auto;
+    }
+}
+
+section.cat-name {
+    padding-bottom: 75px;
+    background-color: #f6f6f6;
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+    .cat-title {
+        margin-bottom: 35px;
+        border-bottom: 2px solid #4c5359;
+        h2 {
+            color: #4c5359;
+            margin-top: 75px;
+            margin-bottom: 22px;
+            font-size: 30px;
+            font-weight: normal;
+            @media(max-width: 991px) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            @media(max-width: 767px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media(max-width: 767px) {
+            text-align: center;
+        }
+    }
+    .house-row {
+        margin: 0 -25px;
+        @media(max-width: 1050px) {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        @media(max-width: 400px) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    .house {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .house-title {
+            background-color: #4c5359;
+            h3 {
+                text-align: center;
+                margin-bottom: 0px;
+                line-height: 59px;
+                color: #d6d8d9;
+                text-transform: uppercase;
+                font-size: 21px;
+            }
+        }
+        .house-img-link {
+            .type-img {
+                position: relative;
+                .overlay {
+                    position: absolute;
+                    opacity: 0;
+                    background-color: #585757;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.5s;
+                    /*&:before{
+                        content: '+';
+                        position: absolute;
+
+                    }*/
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-height: 195px;
+                }
+            }
+            &:hover {
+                .overlay {
+                    opacity: 0.60;
+                }
+            }
+        }
+        .bottom-content {
+            padding-top: 10px;
+            background-color: #fff;
+            .prices {
+                margin: 0 10px;
+                .building-block-box {
+                    padding-right: 0;
+                }
+                p {
+                    color: #939291;
+                    margin-top: 13px;
+                    margin-bottom: 0px;
+                    font-size: 16px;
+                    &.building-block-price {
+                        margin-top: 13px;
+                        font-size: 15px;
+                        color: #f8a95d;
+                        font-weight: bold;
+                    }
+                    @media(max-width: 400px) {
+                        font-size: 14px;
+                    }
+                }
+                &:first-child {
+                    border-top: 1px solid #bdbdbd;
+                }
+                &:nth-child(2) {
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #bdbdbd;
+                }
+            }
+            .house-info-row {
+                margin: 0 auto;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                .house-info {
+                    border-right: 1px solid #bdbdbd;
+                    text-align: center;
+                    .house-info-img {
+                        max-width: 100%;
+                        width: 19px;
+                        height: auto;
+                    }
+                    .house-info-text {
+                        color: #939291;
+                        font-size: 13px;
+                        padding-left: 8px;
+                        position: relative;
+                        top: 3px;
+                        @media(max-width: 400px) {
+                            font-size: 10px;
+                            padding-left: 2px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .house-info-img {
+                            width: 28px;
+                        }
+                    }
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+        }
     }
 }
