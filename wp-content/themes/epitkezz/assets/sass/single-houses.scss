@@ -1,0 +1,8 @@
+section.single-house{
+    .container {
+        width: 984px;
+        @media(max-width: 984px) {
+            width: 100%;
+        }
+    }
+}

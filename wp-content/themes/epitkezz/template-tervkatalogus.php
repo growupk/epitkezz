@@ -46,7 +46,7 @@
                                     <div class="house-title">
                                         <h3><?php echo $posts->post->post_title;?></h3>
                                     </div>
-                                    <a class="house-img-link" href="#">
+                                    <a class="house-img-link" href="<?php echo get_permalink( $post->ID ); ?>">
                                         <div class="type-img">
                                             <div class="overlay"></div>
                                             <?php the_post_thumbnail();?>
