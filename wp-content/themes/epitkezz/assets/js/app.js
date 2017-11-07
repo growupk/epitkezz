@@ -8,33 +8,58 @@ const OwlC = new Owl()
 
 document.addEventListener('DOMContentLoaded', function () {
     OwlC.Init()
-  }, false)
+}, false)
 
 /*import ExampleClass from './example.js'
 
 const exampleClass = new ExampleClass()
 exampleClass.helloWorld()*/
 
-$(document).ready(function(){
-    $('.header-top button').on('click', function(){
+$(document).ready(function () {
+    $('.header-top button').on('click', function () {
         $('section.top-menu .top-menu').toggleClass('opened')
     })
 
     //kivitelezés
-    $('.implementation .left-box').on('mouseover', function(){
+    $('.implementation .left-box').on('mouseover', function () {
         $('.implementation .left-box a').addClass('visited')
     })
-    $('.implementation .left-box').on('mouseout', function(){
+    $('.implementation .left-box').on('mouseout', function () {
         $('.implementation .left-box a').removeClass('visited')
     })
 
-    $('.implementation .right-box').on('mouseover', function(){
+    $('.implementation .right-box').on('mouseover', function () {
         $('.right-box a').addClass('visited')
     })
-    $('.implementation .right-box').on('mouseout', function(){
+    $('.implementation .right-box').on('mouseout', function () {
         $('.implementation .right-box a').removeClass('visited')
     })
 
     /*Tervkatalógus slider*/
-    //$("a[rel^='prettyPhoto']").prettyPhoto()
+
+    var modal = $('#myModal'),
+        modalImg = $('#img01'),
+        captionText = $('#caption')
+
+    /*img.onclick = function () {
+        modal.style.display = "block"
+        modalImg.src = this.src
+        captionText.innerHTML = this.alt
+    }*/
+
+    $('.owl-item img').on('click', function () {
+        var img = $(this)
+        modal.css('display', 'block')
+        var src = img.attr('src')
+        modalImg.attr('src', src)
+        captionText.innerHTML = img.attr('alt')
+    })
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0]
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.css('display', 'none')
+    }
 })

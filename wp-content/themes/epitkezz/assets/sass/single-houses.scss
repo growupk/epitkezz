@@ -20,7 +20,14 @@ section.single-house-top {
             font-size: 33.3px;
             vertical-align: 0;
             letter-spacing: 3.00px;
+            @media(max-width: 767px){
+                font-size: 23px;
+            }
         }
+    }
+    @media(max-width: 991px){
+        height: 300px;
+        background-size: cover;
     }
 }
 
@@ -71,6 +78,9 @@ section.house-datas {
                 background-color: #232220;
                 margin-left: -162px;
                 top: 21px;
+                @media(max-width: 991px){
+                    display: none;
+                }
             }
             &:after {
                 content: '';
@@ -81,45 +91,250 @@ section.house-datas {
                 background-color: #232220;
                 margin-left: 43px;
                 top: 21px;
+                @media(max-width: 991px){
+                    display: none;
+                }
             }
         }
     }
-    .house-parameters{
+    .house-parameters {
         width: 100%;
         max-width: 100%;
         margin-bottom: 70px;
-        .param{
+        .param {
             width: 20%;
             max-width: 100%;
             text-align: center;
-            border-right: 1px solid #b0b0af; 
-            .img-container{
+            border-right: 1px solid #b0b0af;
+            .img-container {
                 height: 67px;
-                img{
+                img {
                     padding-top: 30px;
                     padding-bottom: 15px;
                     margin: 0 auto;
                 }
             }
-            .text-01{
+            .text-01 {
                 text-transform: uppercase;
                 font-size: 12px;
                 margin-bottom: 10px;
             }
-            .text-02{
+            .text-02 {
                 font-weight: bold;
                 font-size: 19px;
                 margin-bottom: 20px;
             }
-            &:last-child{
+            &:nth-child(2n){
+                @media(max-width: 991px){
+                    border-right: 1px solid #b0b0af;
+                }
+                @media(max-width: 650px){
+                    border-right: none;
+                }
+            }
+            &:first-child{
+                @media(max-width: 991px){
+                    width: 100%;
+                }
+            }
+            &:last-child {
                 padding: 0;
                 border-right: none;
+            }
+            @media(max-width: 991px){
+                border: none;
+                width: 50%;
+            }
+            @media(max-width: 650px){
+                border: none;
+                width: 100%;
             }
         }
     }
 }
-section.slider{
-    .owl-slider{
+
+section.slider {
+    background-color: #eceae8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .owl-slider {
         overflow: hidden;
+    }
+    .owl-pagination {
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        padding-bottom: 5px;
+        background-color: rgba(0, 0, 0, 0.46);
+    }
+    .owl-page {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 6px;
+        margin-top: 10px;
+        span {
+            display: block;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 1px solid #ffb642;
+        }
+    }
+    .owl-page.active {
+        span {
+            background-color: #ffb642;
+        }
+    }
+}
+
+section.modal-window {
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #myImg:hover {
+        opacity: 0.7;
+    }
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: hidden;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 70%;
+        max-width: 100%;
+    }
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+}
+
+section.layout{
+    .title {
+        text-align: center;
+        width: 100%;
+        h2 {
+            position: relative;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            line-height: 39.00px;
+            font-family: "Century Gothic", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            color: #232220;
+            background-color: transparent;
+            text-decoration: none;
+            font-variant: normal;
+            font-size: 33.3px;
+            vertical-align: 0;
+            letter-spacing: 3.00px;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                max-width: 192px;
+                width: 100%;
+                background-color: #232220;
+                margin-left: -230px;
+                top: 21px;
+                @media(max-width: 991px){
+                    display: none;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                max-width: 192px;
+                width: 100%;
+                background-color: #232220;
+                margin-left: 43px;
+                top: 21px;
+                @media(max-width: 991px){
+                    display: none;
+                }
+            }
+        }
+    }
+    img{
+        margin: 0 auto;
+        padding-bottom: 30px;
     }
 }
