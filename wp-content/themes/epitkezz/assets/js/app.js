@@ -2,6 +2,14 @@ require('bootstrap')
 require('bootstrap/scss/bootstrap.scss')
 require('font-awesome/scss/font-awesome.scss')
 
+import Owl from '../src/owl.js'
+
+const OwlC = new Owl()
+
+document.addEventListener('DOMContentLoaded', function () {
+    OwlC.Init()
+  }, false)
+
 /*import ExampleClass from './example.js'
 
 const exampleClass = new ExampleClass()
@@ -9,9 +17,8 @@ exampleClass.helloWorld()*/
 
 $(document).ready(function(){
     $('.header-top button').on('click', function(){
-       $('section.top-menu .top-menu').toggleClass('opened')
+        $('section.top-menu .top-menu').toggleClass('opened')
     })
-
 
     //kivitelezés
     $('.implementation .left-box').on('mouseover', function(){
@@ -28,4 +35,6 @@ $(document).ready(function(){
         $('.implementation .right-box a').removeClass('visited')
     })
 
+    /*Tervkatalógus slider*/
+    //$("a[rel^='prettyPhoto']").prettyPhoto()
 })
