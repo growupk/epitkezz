@@ -89,6 +89,20 @@ function create_post_type() {
 		'taxonomies' => array( 'category' )
 		)
 	);
+
+	register_post_type( 'common',
+		array(
+		'labels' => array(
+			'name' => __( 'Közös elemek' ),
+			'singular_name' => __( 'Közös elemek' )
+		),
+		'public' => true,
+		'has_archive' => true,
+		'query_var' => true,
+		'supports' => array( 'title', 'thumbnail' ),
+		'taxonomies' => array( 'category' )
+		)
+	);
 }
 add_action( 'init', 'create_post_type' );
 
