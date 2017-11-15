@@ -48,7 +48,9 @@
                                     </div>
                                     <a class="house-img-link" href="<?php echo get_permalink( $post->ID ); ?>">
                                         <div class="type-img">
-                                            <div class="overlay"></div>
+                                            <div class="overlay">
+                                                <img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/tervhover.png" alt="megnyitás">
+                                            </div>
                                             <?php the_post_thumbnail();?>
                                         </div>
                                     </a>
