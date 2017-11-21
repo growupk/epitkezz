@@ -20,6 +20,12 @@ msgid "Twenty Fifteen"
 msgstr "Twenty Fifteen"
 
 #. translators: %s: post title
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: %s: post title
 #: inc/template-tags.php:123
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "<span class=\"screen-reader-text\"> %s</span> bejegyzéshez hozzászólás"
@@ -220,7 +226,7 @@ msgstr "Elsődleges menü"
 msgid "Proudly powered by %s"
 msgstr ""
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.9)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
@@ -256,16 +262,17 @@ msgstr "Oldalak:"
 msgid "Continue reading %s"
 msgstr "%s részletei..."
 
-#: comments.php:53
+#: comments.php:69
 msgid "Comments are closed."
 msgstr "Hozzászólások lehetősége itt nem engedélyezett."
 
-#: comments.php:28
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "&ldquo;%2$s&rdquo; bejegyzéshez egy hozzászólás"
-msgstr[1] "&ldquo;%2$s&rdquo; bejegyzéshez %1$ hozzászólás"
+msgstr[0] ""
+msgstr[1] ""
 
 #: author-bio.php:34
 msgid "View all posts by %s"

@@ -65,4 +65,15 @@ $(document).ready(function () {
             modal.css('display', 'none')
         }
     }
+
+    //Fixed header mobile menu scroll
+    $(document).scroll(function () {
+        var scrollHeight = $(this).scrollTop();
+        if (scrollHeight > 5) {
+            $('.header-contact').css('display', 'none')
+        } else {
+            $('.header-contact').css('display', 'block')
+        }
+    });
+
 })

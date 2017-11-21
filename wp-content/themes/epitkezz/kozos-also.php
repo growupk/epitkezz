@@ -8,7 +8,7 @@
     );
     $my_posts = get_posts($args);
 ?>
-<?php var_dump($my_posts[0]->ID);?>
+
 <section class="pdf">
     <div class="container">
         <div class="row">

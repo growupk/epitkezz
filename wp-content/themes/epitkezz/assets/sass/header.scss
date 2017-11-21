@@ -1,3 +1,14 @@
+.overlay-fixed-header{
+    @media(min-width: 767px){
+        display: none;
+    }
+    @media(max-width: 767px){
+        height: 129px;
+    }
+    @media(max-width: 473px){
+        height: 183px;
+    }
+}
 section.top-menu {
     margin-top: 20px;
     .container {
@@ -18,6 +29,17 @@ section.top-menu {
             img {
                 @media(max-width: 767px) {
                     margin: 0 auto;
+                }
+            }
+            .desktop-logo{
+                @media(max-width: 767px){
+                    display: none;
+                }
+            }
+            .mobile-logo{
+                max-width: 50px;
+                @media(min-width: 767px){
+                    display: none;
                 }
             }
             @media(max-width: 767px) {
@@ -70,14 +92,15 @@ section.top-menu {
         }
     }
     .top-menu {
+        padding: 0;
+        background-color: #4c5359;
+        width: 100% !important;
         .container {
             width: 1014px;
             @media(max-width: 1014px) {
                 width: 100%;
             }
         }
-        padding: 0;
-        background-color: #4c5359;
         .container,
         .collapse {
             padding: 0;
@@ -180,8 +203,15 @@ section.top-menu {
             margin-right: 5px;
         }
     }
+    @media(max-width: 767px){
+        margin-top: 0;
+        background-color: #fff;
+        position: fixed;
+        padding-top: 10px;
+        z-index: 5;
+        width: 100%;
+    }
 }
-
 @media (max-width: 767px) {
     .navbar-header {
         float: none;
