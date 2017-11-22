@@ -76,4 +76,27 @@ $(document).ready(function () {
         }
     });
 
+    //Search form
+    $('.search-btn').on('click',function(){
+        $('#sidebar').toggleClass('active')
+    })
+
+    
+    var windowWidth = window.innerWidth
+    if(windowWidth < 768){
+        console.log('load')
+        $('#sidebar').appendTo('.mobile-search')
+    }else{
+        $('#sidebar').appendTo('.desktop-search')
+    }
+    
+
+    $( window ).resize(function() {
+        var windowWidth = window.innerWidth
+        if(windowWidth < 768){
+            $('#sidebar').appendTo('.mobile-search')
+        }else{
+            $('#sidebar').appendTo('.desktop-search')
+        }
+    })
 })

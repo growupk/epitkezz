@@ -75,7 +75,13 @@
 							</div>
 						</nav>
 					</div>
+					<div class="desktop-search">
+						<?php echo get_sidebar();?>
+					</div>
 				</div>
+			</div>
+			<div class="mobile-search">
+
 			</div>
 		</header>
 	</section>
