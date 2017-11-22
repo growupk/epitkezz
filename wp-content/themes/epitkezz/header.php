@@ -30,6 +30,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-md-4 col-lg-6 logo-container">
+							<div class="search-btn">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
 							<a class="desktop-logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/logo.png" alt="<?php wp_title(); ?>" class="img-responsive logo"></a>				
 							<a class="mobile-logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/assets/img/mobile-logo.png" alt="<?php wp_title(); ?>" class="img-responsive mobile-logo"></a>				
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -65,6 +68,9 @@
 								</ul>
 								<div class="facebook">
 									<a target="_blank" href="<?= the_field('fejlec_facebook_link', 'option');?>" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								</div>
+								<div class="search-btn">
+									<i class="fa fa-search" aria-hidden="true"></i>
 								</div>
 							</div>
 						</nav>
