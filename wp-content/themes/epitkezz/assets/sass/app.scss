@@ -21,9 +21,43 @@ html, body{
 }
 
 body.search{
+	.navigation{
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		.next-posts, .prev-posts{
+			display: inline-block;
+			a{
+				color: #4c5359;
+				font-size: 18px;
+				text-decoration: none;
+				&:hover{
+					border-bottom: 3px solid #f7912f;
+				}
+			}
+		}
+		.next-posts{
+			margin-right: 40px;
+		}
+	}
+	h3{
+		text-align: center;
+		margin-bottom: 25px;
+		font-weight: bold;
+		a{
+			color: #4c5359;
+			text-decoration: none;
+			&:hover{
+				border-bottom: 3px solid #f7912f;
+			}
+		}
+	}
 	h2{
 		text-align: center;
 		margin-top: 35px;
 		margin-bottom: 35px;
+	}
+	.search-null{
+		height: calc(100vh - 509px);
 	}
 }
