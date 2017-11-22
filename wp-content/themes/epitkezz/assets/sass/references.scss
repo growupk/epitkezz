@@ -1,0 +1,31 @@
+section.references{
+    h2{
+        position: relative;
+        text-align: center;
+        margin-top: 35px;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #4c5359;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        &:after{
+            content: '';
+            position: absolute;
+            height: 3px;
+            max-width: 105px;
+            width: 100%;
+            background-color: #f7912f;
+            bottom: 0px;
+            left: calc(50% - 52.5px);
+        }
+    }
+    .master-slider-parent{
+        margin-bottom: 35px;
+    }
+    .ms-nav-next, .ms-nav-prev{
+        @media(max-width: 767px){
+            display: none;
+        }
+    }
+}
