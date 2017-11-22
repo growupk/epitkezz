@@ -19,3 +19,11 @@ html, body{
 	padding: 0;
 	background: $color-secondary;
 }
+
+body.search{
+	h2{
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+}

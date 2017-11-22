@@ -2,7 +2,7 @@
 
 	<?php if (have_posts()) : ?>
 
-		<h2>Search Results</h2>
+		<h2>Keresés eredménye:</h2>
 
 		<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
@@ -28,7 +28,7 @@
 
 	<?php else : ?>
 
-		<h2>No posts found.</h2>
+		<h2>Nincs találat a megadott keresési feltételre</h2>
 
 	<?php endif; ?>
 
