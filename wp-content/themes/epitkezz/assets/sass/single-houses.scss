@@ -222,6 +222,7 @@ section.modal-window {
         /* Fallback color */
         background-color: rgba(0, 0, 0, 0.9);
         /* Black w/ opacity */
+        z-index: 5000;
     }
     /* Modal Content (image) */
     .modal-content {
@@ -268,12 +269,16 @@ section.modal-window {
     /* The Close Button */
     .close {
         position: absolute;
-        top: 15px;
+        top: 55px;
         right: 35px;
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
         transition: 0.3s;
+        @media(max-width: 767px){
+            right: 5px;
+        }
+
     }
     .close:hover,
     .close:focus {
