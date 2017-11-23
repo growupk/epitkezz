@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const themeName = (process.env.WPTHEME).trim()
 
@@ -17,11 +18,10 @@ const configs = [{
       },
       {
         test: /\.(sass|scss)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader!sass-loader'
+        })
       },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -45,7 +45,8 @@ const configs = [{
       jquery: 'jquery',
       'window.jQuery': 'jquery',
       Tether: 'tether'
-    })
+    }),
+    new ExtractTextPlugin('app.css')
   ]
 }
 ]
