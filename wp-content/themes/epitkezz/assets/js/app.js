@@ -77,26 +77,35 @@ $(document).ready(function () {
     });
 
     //Search form
+    //var searchInput = $('.searchform #s')
     $('.search-btn').on('click',function(){
-        $('#sidebar').toggleClass('active')
+        var windowWidth = window.innerWidth
+        if(windowWidth < 768){
+            $('.sidebar-mobile').toggleClass('active')
+        }else{
+            $('#sidebar').toggleClass('active')
+        }
     })
-
-    
-    var windowWidth = window.innerWidth
-    if(windowWidth < 768){
-        console.log('load')
-        $('#sidebar').appendTo('.mobile-search')
-    }else{
-        $('#sidebar').appendTo('.desktop-search')
-    }
-    
 
     $( window ).resize(function() {
         var windowWidth = window.innerWidth
         if(windowWidth < 768){
-            $('#sidebar').appendTo('.mobile-search')
+            if($('.sidebar-mobile').hasClass('active') !== true){
+                $('.sidebar-mobile').toggleClass('active')
+            }
         }else{
-            $('#sidebar').appendTo('.desktop-search')
+            if($('#sidebar').hasClass('active') !== true){
+                $('#sidebar').toggleClass('active')            
+            }
         }
-    })
+    }) 
+
+    /* var windowWidth = window.innerWidth
+    if(windowWidth < 768){
+        $('#sidebar').appendTo('.mobile-search')
+    }else{
+        $('#sidebar').appendTo('.desktop-search')
+    }
+    */
+
 })

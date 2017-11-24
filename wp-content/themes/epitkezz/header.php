@@ -81,7 +81,14 @@
 				</div>
 			</div>
 			<div class="mobile-search">
-
+				<div class="sidebar-mobile">
+					<form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
+						<div>
+							<input type="text" id="s" name="s" value="" />
+							<input type="submit" value="Keresés" id="searchsubmit" />
+						</div>
+					</form>
+				</div>
 			</div>
 		</header>
 	</section>
