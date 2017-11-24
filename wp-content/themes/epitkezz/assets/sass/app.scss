@@ -20,6 +20,16 @@ html, body{
 	background: $color-secondary;
 }
 
+.row{
+	&:before,
+	&:after {
+		content: normal;
+		clear: both;
+		height: 0;
+		display: block;
+	}
+}
+
 body.search{
 	.navigation{
 		text-align: center;

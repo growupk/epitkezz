@@ -93,10 +93,6 @@ $(document).ready(function () {
             if($('.sidebar-mobile').hasClass('active') !== true){
                 $('.sidebar-mobile').toggleClass('active')
             }
-        }else{
-            if($('#sidebar').hasClass('active') !== true){
-                $('#sidebar').toggleClass('active')            
-            }
         }
     }) 
 
