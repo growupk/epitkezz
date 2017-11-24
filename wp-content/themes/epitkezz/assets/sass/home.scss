@@ -29,6 +29,10 @@ section.home-top-img {
             span {
                 color: #f7912f;
             }
+            @media(max-width: 767px){
+                line-height: 45px;
+                font-size: 30px;
+            }
         }
         .second-title {
             font-weight: 700;
@@ -37,6 +41,7 @@ section.home-top-img {
             color: #fff;
             margin-bottom: 85px;
             @media(max-width: 767px) {
+                font-size: 25px;
                 margin-bottom: 40px;
             }
         }
