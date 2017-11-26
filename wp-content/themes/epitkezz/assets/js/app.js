@@ -37,9 +37,9 @@ $(document).ready(function () {
 
     /*Tervkatalógus slider*/
 
-    var modal = $('#myModal'),
+   /*  var modal = $('#myModal'),
         modalImg = $('#img01'),
-        captionText = $('#caption')
+        captionText = $('#caption') */
 
     /*img.onclick = function () {
         modal.style.display = "block"
@@ -47,34 +47,34 @@ $(document).ready(function () {
         captionText.innerHTML = this.alt
     }*/
 
-    $('.owl-item img').on('click', function () {
+   /*  $('.owl-item img').on('click', function () {
         var img = $(this)
         modal.css('display', 'block')
         var src = img.attr('src')
         modalImg.attr('src', src)
         captionText.innerHTML = img.attr('alt')
-    })
+    }) */
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0]
+    /* var span = document.getElementsByClassName("close")[0] */
 
     // When the user clicks on <span> (x), close the modal
 
-    if(span !== undefined){
+    /* if(span !== undefined){
         span.onclick = function () {
             modal.css('display', 'none')
         }
-    }
+    } */
 
     //Fixed header mobile menu scroll
-    $(document).scroll(function () {
+    /* $(document).scroll(function () {
         var scrollHeight = $(this).scrollTop();
         if (scrollHeight > 5) {
             $('.header-contact').css('display', 'none')
         } else {
             $('.header-contact').css('display', 'block')
         }
-    });
+    }); */
 
     //Search form
     //var searchInput = $('.searchform #s')
@@ -90,22 +90,14 @@ $(document).ready(function () {
     $( window ).resize(function() {
         var windowWidth = window.innerWidth
         if(windowWidth < 768){
-            if($('.sidebar-mobile').hasClass('active') !== true){
-                $('.sidebar-mobile').toggleClass('active')
+            if($('#sidebar').hasClass('active') === true){
+                $('#sidebar').toggleClass('active')
             }
         }else{
-            if($('#sidebar').hasClass('active') !== true){
-                $('#sidebar').toggleClass('active')
+            if($('.sidebar-mobile').hasClass('active') === true){
+                $('.sidebar-mobile').toggleClass('active')
             }
         }
     }) 
-
-    /* var windowWidth = window.innerWidth
-    if(windowWidth < 768){
-        $('#sidebar').appendTo('.mobile-search')
-    }else{
-        $('#sidebar').appendTo('.desktop-search')
-    }
-    */
 
 })

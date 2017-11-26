@@ -157,6 +157,12 @@ section.slider {
     background-color: #eceae8;
     padding-top: 50px;
     padding-bottom: 50px;
+    .container{
+        @media(max-width: 1140px){
+            width: 100%;
+            max-width: 100%;
+        }
+    }
     .owl-slider {
         overflow: hidden;
     }

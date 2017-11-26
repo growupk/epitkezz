@@ -7,7 +7,7 @@ export default class Owl {
     $(this.owl_carousel).owlCarousel({
       loop: false,
       mouseDrag: false,
-      touchDrag: false,
+      touchDrag: true,
       navigation: true,
       autoPlay: 4000,
       items : 1,

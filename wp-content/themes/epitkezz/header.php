@@ -69,6 +69,10 @@
 								<div class="facebook">
 									<a target="_blank" href="<?= the_field('fejlec_facebook_link', 'option');?>" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 								</div>
+								<div class="col-12 col-md-8 col-lg-6 header-contact mobile">
+									<span><i class="fa fa-phone" aria-hidden="true"></i><?= the_field('fejlec_telefonszam', 'option');?></span>
+									<span><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:<?= the_field('fejlec_email');?>"><?= the_field('fejlec_email', 'option');?></a></span>		
+								</div>
 								<div class="search-btn">
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</div>

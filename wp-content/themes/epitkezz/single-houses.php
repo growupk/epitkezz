@@ -48,13 +48,13 @@
         </div>
     </div>
 </section>
-<section class="modal-window">
+<!-- <section class="modal-window">
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
-</section>
+</section> -->
 <section class="layout">
     <div class="title">
         <h2><?= the_field('haz_tipus_aloldal_alaprajz_cim');?></h2>
