@@ -166,7 +166,7 @@ section.slider {
     .owl-slider {
         overflow: hidden;
     }
-    .owl-pagination {
+    .owl-dots {
         bottom: 0;
         text-align: center;
         width: 100%;
@@ -174,22 +174,28 @@ section.slider {
         padding-bottom: 5px;
         background-color: rgba(0, 0, 0, 0.46);
     }
-    .owl-page {
-        cursor: pointer;
-        display: inline-block;
-        margin-right: 6px;
-        margin-top: 10px;
+    .owl-dot {
+        cursor: pointer !important;
+        display: inline-block !important;
+        margin-right: 6px !important;
+        margin-top: 10px !important;
         span {
-            display: block;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: 1px solid #ffb642;
+            display: block !important;
+            height: 15px !important;
+            width: 15px !important;
+            border-radius: 50% !important;
+            background: transparent !important;
+            border: 1px solid #ffb642 !important;
+        }
+        &:hover{
+            span{
+                background: transparent !important;
+            }
         }
     }
-    .owl-page.active {
+    .owl-dot.active {
         span {
-            background-color: #ffb642;
+            background-color: #ffb642 !important;
         }
     }
     .owl-item{

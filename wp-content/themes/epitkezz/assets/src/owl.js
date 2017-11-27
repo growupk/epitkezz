@@ -5,7 +5,7 @@ export default class Owl {
 
   Init() {
     $(this.owl_carousel).owlCarousel({
-      loop: false,
+      /* loop: false,
       mouseDrag: false,
       touchDrag: true,
       navigation: true,
@@ -20,7 +20,12 @@ export default class Owl {
       slideSpeed: 300,
       paginationSpeed: 400,
       singleItem: true,
-      navigationText: false
+      navigationText: false */
+      loop: true,
+      margin: 10,
+      nav: false,
+      items: 1,
+      dots: true
     })
   }
 }
