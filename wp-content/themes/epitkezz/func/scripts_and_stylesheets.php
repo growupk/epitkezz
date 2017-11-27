@@ -27,12 +27,12 @@ function evistaStarterStyles () {
 
 		wp_register_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext' );
 		wp_enqueue_style( 'wpb-google-fonts' );
-		
-		/* wp_register_style( 'owlcarousel', get_template_directory_uri().'/assets/css/owl.carousel.css' );
-		wp_enqueue_style( 'owlcarousel' );
 
-		wp_register_style( 'owlcarouseltheme', get_template_directory_uri().'/assets/css/owl.theme.default.css' );
-		wp_enqueue_style( 'owlcarouseltheme' ); */
+		wp_register_style( 'owlc', get_template_directory_uri() . '/assets/vendor/css/owl.theme.default.min.css' );
+		wp_enqueue_style( 'owlc' );
+
+		wp_register_style( 'owlcmin', get_template_directory_uri() . '/assets/vendor/css/owl.carousel.min.css' );
+		wp_enqueue_style( 'owlcmin' );
 
 		if (file_exists( get_stylesheet_directory() . '/build/app.css' )){
 			wp_register_style( 'app', get_template_directory_uri() . '/build/app.css' );
