@@ -1,4 +1,16 @@
 section.contact {
+    .mobile-number{
+        color: #232220;
+        text-decoration: none;
+        &:hover{
+            color: #232220;
+            text-decoration: none;
+        }
+        &:focus{
+            color: #232220;
+            text-decoration: none;
+        }
+    }
     .container-fluid {
         border-bottom: 8px solid orange;
         background-repeat: no-repeat;

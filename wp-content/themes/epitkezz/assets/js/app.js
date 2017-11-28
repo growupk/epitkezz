@@ -16,6 +16,10 @@ const exampleClass = new ExampleClass()
 exampleClass.helloWorld()*/
 
 $(document).ready(function () {
+    $('.navbar-toggle').on('click', function () {
+        $('.header-menu-items').toggleClass('active')
+    })
+
     $('.header-top button').on('click', function () {
         $('section.top-menu .top-menu').toggleClass('opened')
     })

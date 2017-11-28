@@ -22,7 +22,21 @@
                         <div class="col-xs-12 col-md-6 col-lg-3 contact-image-wrapper">
                             <img src="<?php the_sub_field('kapcsolat_kep');?>" alt="kapcsolat" class="img-responsive">
                             <p class="first-title"><?= the_sub_field('kapcsolat_tipusa');?></p>
-                            <p class="second-title"><?= the_sub_field('kapcsolat_elerhetoseg');?></p>
+                            <p class="second-title">
+                                <?php
+                                    $phoneNumber = get_sub_field('kapcsolat_elerhetoseg');
+                                    $phoneNumber = str_replace('(', '', $phoneNumber);									
+                                    $phoneNumber = str_replace(')', '', $phoneNumber);
+                                    $phoneNumber = str_replace(' ', '', $phoneNumber);	
+                                    if (is_numeric($phoneNumber)) {
+                                        ?>
+                                        <a class="mobile-number" href="tel:<?php echo $phoneNumber;?>"><?= the_sub_field('kapcsolat_elerhetoseg');?></a>
+                                        <?php
+                                    }else{
+                                        the_sub_field('kapcsolat_elerhetoseg');
+                                    }
+                                ?>
+                            </p>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
