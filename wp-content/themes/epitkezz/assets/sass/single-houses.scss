@@ -186,6 +186,9 @@ section.slider {
             border-radius: 50% !important;
             background: transparent !important;
             border: 1px solid #ffb642 !important;
+            @media(max-width: 767px){
+                margin: 5px 2px !important;
+            }
         }
         &:hover{
             span{
