@@ -86,7 +86,7 @@
         </div>
     </div>
 </section>
-<section class="home-design" style="background-image: url('<?= the_field('tervezes_alapkovei_hatter_kep');?>');">
+<!-- <section class="home-design" style="background-image: url('<?= the_field('tervezes_alapkovei_hatter_kep');?>');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="about-us">
     <div class="container">
         <div class="row">
